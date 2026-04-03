@@ -4,7 +4,7 @@
 Run the automated version of this checklist with one command:
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/kubecounty/k8s-cost-audit/main/kubecounty-audit.sh)
+bash <(curl -s https://raw.githubusercontent.com/kubecounty/K8sCostAuditor/main/k8s_audit.sh)
 ```
 
 > Want the findings interpreted by an LLM? Run with `--output json` and pipe the result into your AI tool of choice.
@@ -157,19 +157,19 @@ Fill in the **Status** and **Notes** columns as you work through each section. T
 Every check in this document is scripted. Run the full audit against any cluster:
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/kubecounty/k8s-cost-audit/main/kubecounty-audit.sh)
+bash <(curl -s https://raw.githubusercontent.com/kubecounty/K8sCostAuditor/main/k8s_audit.sh)
 ```
 
 Save findings to a file:
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/kubecounty/k8s-cost-audit/main/kubecounty-audit.sh) --output audit-report.txt
+bash <(curl -s https://raw.githubusercontent.com/kubecounty/K8sCostAuditor/main/k8s_audit.sh) --output audit-report.txt
 ```
 
 Output as JSON for LLM analysis:
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/kubecounty/k8s-cost-audit/main/kubecounty-audit.sh) --output findings.json
+bash <(curl -s https://raw.githubusercontent.com/kubecounty/K8sCostAuditor/main/k8s_audit.sh) --output findings.json
 ```
 
 ---
